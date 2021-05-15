@@ -7,3 +7,4 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 1: BAND NAME GENERATOR
 ### DAY 2: BODY MASS INDEX CHECKER
 ### DAY 3: TREASURE ISLAND CHECKER
+### DAY 4 : ROCK, PAPER AND SCISSOR GAME
