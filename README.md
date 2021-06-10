@@ -23,9 +23,9 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 15: COFFEE MAKER PROGRAM
 ### DAY 16: COFFEE MAKER USING OOPS CONCEPT
 ### DAY 17: QUIZ BRAIN  
-### DAY 18: 
-### DAY 19:
-### DAY 20:
+### DAY 18: RANDOM TURTLE WALK
+### DAY 19: TURTLE RACE 
+### DAY 20: 
 ### DAY 21:
 ### DAY 22:
 ### DAY 23:
