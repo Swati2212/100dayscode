@@ -14,8 +14,8 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 6: WHILE LOOPS(MAZE)
 ### DAY 7: HANGMAN GAME
 ### DAY 8: CAESAR CIPHAR ENCRYPTION GAME
-### DAY 9:
-### DAY 10:
+### DAY 9: SECRET AUCTION PROGRAM
+### DAY 10: 
 ### DAY 11:
 ### DAY 12:
 ### DAY 13:
