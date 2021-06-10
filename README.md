@@ -25,13 +25,13 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 17: QUIZ BRAIN  
 ### DAY 18: RANDOM TURTLE WALK
 ### DAY 19: TURTLE RACE 
-### DAY 20: 
-### DAY 21:
-### DAY 22:
-### DAY 23:
-### DAY 24:
-### DAY 25:
-### DAY 26:
+### DAY 20: SNAKE GAME PART-1
+### DAY 21: SNAKE GAME PART-2
+### DAY 22: PONG GAME PART-1
+### DAY 23: PONG GAME PART-2
+### DAY 24: TURTLE CROSSING PART-1
+### DAY 25: TURTLE CROSSING PART-2
+### DAY 26: 
 ### DAY 27:
 ### DAY 28:
 ### DAY 29:
