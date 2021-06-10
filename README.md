@@ -15,15 +15,15 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 7: HANGMAN GAME
 ### DAY 8: CAESAR CIPHAR ENCRYPTION GAME
 ### DAY 9: SECRET AUCTION PROGRAM
-### DAY 10: 
-### DAY 11:
-### DAY 12:
-### DAY 13:
-### DAY 14:
-### DAY 15:
-### DAY 16:
-### DAY 17:
-### DAY 18:
+### DAY 10: PYTHONSITA CALCULATOR
+### DAY 11: BLACK-JACK GAME
+### DAY 12: GUESS THE NUMBER
+### DAY 13: WHILE LOOPS 
+### DAY 14: HIGHER LOWER GAME
+### DAY 15: COFFEE MAKER PROGRAM
+### DAY 16: COFFEE MAKER USING OOPS CONCEPT
+### DAY 17: QUIZ BRAIN  
+### DAY 18: 
 ### DAY 19:
 ### DAY 20:
 ### DAY 21:
