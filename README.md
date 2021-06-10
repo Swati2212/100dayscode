@@ -31,10 +31,10 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 23: PONG GAME PART-2
 ### DAY 24: TURTLE CROSSING PART-1
 ### DAY 25: TURTLE CROSSING PART-2
-### DAY 26: 
-### DAY 27:
-### DAY 28:
-### DAY 29:
-### DAY 30:
+### DAY 26: MAIL MERGE PROGRAM
+### DAY 27: STATES USING CSV
+### DAY 28: NATO ALPHABET PROGRAM
+### DAY 29: MILES-TO-KM CONVERTER GUI
+### DAY 30: POMODORO APP GUI
 
 
