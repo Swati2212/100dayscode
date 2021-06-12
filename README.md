@@ -37,5 +37,6 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 29: MILES-TO-KM CONVERTER GUI
 ### DAY 30: POMODORO APP GUI
 ### DAY 31: PASSWORD MANAGER 
+### DAY 32: FLASH CARD 
 
 
