@@ -40,4 +40,4 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 32: FLASH CARD 
 ### DAY 33: AUTOMATED BIRTHDAY WISHER
 ### DAY 34: KANYE QUOTES USING API
-
+### DAY 35: QUIZZLER USING API
