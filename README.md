@@ -41,3 +41,5 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 33: AUTOMATED BIRTHDAY WISHER
 ### DAY 34: KANYE QUOTES USING API
 ### DAY 35: QUIZZLER USING API
+### DAY 36: RAIN ALERT USING API
+### DAY 37: STOCK NEWS MONITORING
