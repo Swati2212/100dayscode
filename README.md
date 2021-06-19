@@ -43,3 +43,4 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 35: QUIZZLER USING API
 ### DAY 36: RAIN ALERT USING API
 ### DAY 37: STOCK NEWS MONITORING
+### DAY 38: HABIT TRACKER
