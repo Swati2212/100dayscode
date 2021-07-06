@@ -48,3 +48,4 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 40 & 41: FLIGHT DEAL FINDER
 ### DAY 42: INTRODUCTION TO HTML
 ### DAY 43: INTRODUCTION TO CSS
+### DAY 44 & 45 & 46: PERSONAL WEBSITE USING HTML AND CSS
