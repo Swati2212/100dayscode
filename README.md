@@ -46,3 +46,4 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 38: HABIT TRACKER
 ### DAY 39: WORKOUT TRACKING USING GOOGLE SHEETS
 ### DAY 40 & 41: FLIGHT DEAL FINDER
+### DAY 42 & 43: INTRODUCTION TO HTML AND CSS
