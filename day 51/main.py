@@ -1,72 +1,75 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import random
-from selenium.common.exceptions import ElementClickInterceptedException
-
+from selenium.common.exceptions import NoSuchElementException
 import time
 
-CHROME_DRIVER_PATH = "E:\chromedriver_win32\chromedriver"
-INSTAGRAM_USERNAME = "sw_ati2869"
-INSTAGRAM_PASSWORD = "swati@123"
-SIMILAR_ACCOUNT = "python.learning"
-INSTAGRAM_URL = "https://www.instagram.com/"
+ACCOUNT_EMAIL = "YOUR EMAIL"
+ACCOUNT_PASSWORD = "YOUR PASSWORD"
+PHONE_NUMBER = "YOUR MOBILE NUMBER"
 
-class InstaFollower:
+chrome_driver_path = "E:\chromedriver_win32\chromedriver"
+driver = webdriver.Chrome(executable_path=chrome_driver_path)
+driver.get("https://www.linkedin.com/jobs/search/?f_AL=true&f_E=2&geoId=102713980&keywords=python%20developer&location=India")
 
-    def __init__(self, path):
-        self.driver =webdriver.Chrome(executable_path=path)
-        self.driver.set_window_size(1310, 720)
+sign_in_button = driver.find_element_by_link_text("Sign in")
+sign_in_button.click()
 
-    def login(self):
-        self.driver.get(INSTAGRAM_URL)
-        time.sleep(3)
+#wait for next page to load
+time.sleep(5)
 
-        username = self.driver.find_element_by_name("username")
-        password = self.driver.find_element_by_name("password")
+email_field = driver.find_element_by_id("username")
+email_field.send_keys(ACCOUNT_EMAIL)
 
-        username.send_keys(INSTAGRAM_USERNAME)
-        password.send_keys(INSTAGRAM_PASSWORD)
-        password.send_keys(Keys.ENTER)
-        time.sleep(3)
+password_field = driver.find_element_by_id("password")
+password_field.send_keys(ACCOUNT_PASSWORD)
+password_field.send_keys(Keys.ENTER)
 
+# not_remember = driver.find_element_by_class_name("btn__secondary--large-muted")
+# not_remember.click()
 
+time.sleep(5)
 
-    def find_followers(self):
-        """ Find the followers of the account you want to follow """
-        self.driver.get(f"{INSTAGRAM_URL}{SIMILAR_ACCOUNT}")
+all_listings = driver.find_elements_by_css_selector(".job-card-container--clickable")
+
+for listing in all_listings:
+    print("called")
+    listing.click()
+    time.sleep(2)
+
+    # Try to locate the apply button, if can't locate then skip the job.
+    try:
+        apply_button = driver.find_element_by_css_selector(".jobs-s-apply button")
+        apply_button.click()
         time.sleep(5)
-        # Find the followers button and click it
-        followers_popup = self.driver.find_element_by_css_selector('header a')
-        followers_popup.click()
-        # print(followers_popup.text)
+
+        # If phone field is empty, then fill your phone number.
+        phone = driver.find_element_by_class_name("fb-single-line-text__input")
+        if phone.text == "":
+            phone.send_keys(PHONE_NUMBER)
+
+        submit_button = driver.find_element_by_css_selector("footer button")
+
+        # If the submit_button is a "Next" button, then this is a multi-step application, so skip.
+        if submit_button.get_attribute("data-control-name") == "continue_unify":
+            close_button = driver.find_element_by_class_name("artdeco-modal__dismiss")
+            close_button.click()
+            time.sleep(2)
+            discard_button = driver.find_elements_by_class_name("artdeco-modal__confirm-dialog-btn")[1]
+            discard_button.click()
+            print("Complex application, skipped.")
+            continue
+        else:
+            submit_button.click()
+
+        # Once application completed, close the pop-up window.
         time.sleep(2)
-        # Holds the div in which the followers are appearing
-        modal = self.driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]')
+        close_button = driver.find_element_by_class_name("artdeco-modal__dismiss")
+        close_button.click()
 
-        for i in range(3):
-            """ Scroll down the followers list """
-            self.driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", modal)
-            time.sleep(1)
+    # If already applied to job or job is no longer accepting applications, then skip.
+    except NoSuchElementException:
+        print("No application button, skipped.")
+        continue
 
-    def follow(self):
-        """ Follows the find users """
-        # Locate the follow buttons of the all the users in followers list
-        follow_btns = self.driver.find_elements_by_css_selector('.PZuss button')
-        # Go through each button and if button text is follow then click on it
-        for btn in follow_btns:
-            if btn.text == 'Follow':
-                time.sleep(1)
-                btn.click()
-                rand_time = random.randint(2, 40)  # Creates a random int to be use as time
-                print(rand_time)
-                time.sleep(rand_time)  # wait for the time until click on the next button
-
-                time.sleep(1)
-
-
-bot = InstaFollower(CHROME_DRIVER_PATH)
-bot.login()
-bot.find_followers()
-bot.follow()
-
-
+time.sleep(5)
+driver.quit()
