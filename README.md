@@ -60,5 +60,6 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 55: INTRODUCTION TO FLASK
 ### DAY 56: HIGHER LOWER WEB GAME
 ### DAY 57: DIGITAL NAME CARD
+### DAY 58: MY BLOG WEBSITE
 
 
