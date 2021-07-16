@@ -62,5 +62,6 @@ As Im an Aspiring Data Scientist, So I will be doing all these projects in pytho
 ### DAY 57: DIGITAL NAME CARD
 ### DAY 58: MY BLOG WEBSITE
 ### DAY 59: WEB FOUNDATION BOOTSTRAP
+### DAY 60:
 
 
